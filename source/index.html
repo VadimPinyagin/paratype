@@ -12,13 +12,69 @@
   <body class="page__body">
     <header class="header">
       <nav class="header__nav nav">
-        <div class="header__special special">
+        <a href="#" class="header__special special">
           <span class="special__discount">25% Sale</span>
-          <p class="special__text">осенняя распродажа шрифтов</p>
-        </div>
+          <span class="special__text">осенняя распродажа шрифтов</span>
+        </a>
+        <a class="header__logo logo" href="index.html" aria-current="page">
+          <span class="visually-hidden">На главную страницу</span>
+          <picture>
+            <source type="image/svg+xml" width="202" height="59" media="(min-width: 1025px)" srcset="images/logo-desktop.svg">
+            <img class="logo__image logo__image--icon" width="40" height="33" src="images/logo-mobile.svg" alt="Логотип Paratype">
+          </picture>
+        </a>
+        <button class="nav__btn btn-burger" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <div class="theme-toggle">
+              <button class="theme-toggle__day" type="button">
+                <span class="visually-hidden">Дневная тема</span>
+              </button>
+              <button class="theme-toggle__night" type="button">
+                <span class="visually-hidden">Ночная тема</span>
+              </button>
+            </div>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Каталог</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link nav__link--active">Коллекции</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Компания</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Справочник</a>
+          </li>
+        </ul>
+        <a class="nav__search search">
+          <span class="visually-hidden">Поиск по сайту</span>
+        </a>
+        <ul class="nav__user-list user-list">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">
+              <span class="visually-hidden">в избранном</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">
+              <span class="visually-hidden">в корзине</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a href="#" class="user-list__link">
+              <span class="user-list__account">мой аккаунт</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <h1 class="visually-hidden">Паратайп — российская компания в области изготовления шрифтов</h1>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
