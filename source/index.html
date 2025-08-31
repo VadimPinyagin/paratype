@@ -27,14 +27,16 @@
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <ul class="nav__list">
-          <li class="nav__list-item">
-            <div class="theme-toggle">
-              <button class="theme-toggle__day" type="button">
-                <span class="visually-hidden">Дневная тема</span>
-              </button>
-              <button class="theme-toggle__night" type="button">
-                <span class="visually-hidden">Ночная тема</span>
-              </button>
+          <li class="nav__list-item theme">
+            <div class="theme-toggle__block">
+              <p class="theme-toggle__item">
+                <label class="visually-hidden" for="light">Светлая</label>
+                <input class="theme-toggle__radio" type="radio" name="theme-toggle" id="light" value="light" title="Светлая">
+              </p>
+              <p class="theme-toggle__item">
+                <label class="visually-hidden" for="dark">Тёмная</label>
+                <input class="theme-toggle__radio" type="radio" name="theme-toggle" id="dark" value="dark" title="Тёмная">
+              </p>
             </div>
           </li>
           <li class="nav__list-item">
@@ -138,23 +140,83 @@
         </ul>
       </section>
       <section class="swiper">
-        <div class="swiper__container">
-          <div class="swiper__slide swiper__slide--active">
-            <h2 class="swiper__title">Слайд 1</h2>
-            <p class="swiper__text">Описание первого слайда.</p>
-          </div>
-          <div class="swiper__slide">
-            <h2 class="swiper__title">Слайд 2</h2>
-            <p class="swiper__text">Описание второго слайда.</p>
-          </div>
-          <div class="swiper__slide">
-            <h2 class="swiper__title">Слайд 3</h2>
-            <p class="swiper__text">Описание третьего слайда.</p>
-          </div>
-          <div class="swiper__slide">
-            <h2 class="swiper__title">Слайд 4</h2>
-            <p class="swiper__text">Описание четвертого слайда.</p>
-          </div>
+        <h2 class="swiper__title visually-hidden">Каталог шрифтов</h2>
+        <ul class="swiper__list">
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Гротески</h3>
+              <span class="promotions__swiper-number">280</span>
+              <span class="update-marker">45</span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Антиквы</h3>
+              <span class="promotions__swiper-number">89</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Брусковые</h3>
+              <span class="promotions__swiper-number">129</span>
+              <span class="update-marker">2</span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Акцидентные</h3>
+              <span class="promotions__swiper-number">278</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Рукописныее</h3>
+              <span class="promotions__swiper-number">23</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Неалфавитные</h3>
+              <span class="promotions__swiper-number">8</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Моноширинные</h3>
+              <span class="promotions__swiper-number">280</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Исторические</h3>
+              <span class="promotions__swiper-number">58</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <select class="sorting__select" aria-label="Сортировка" name="sorting">
+          <option value="" selected>все новинки</option>
+          <option value="">распродажа</option>
+          <option value="">рекомендуем</option>
+          <option value="">бестселлеры</option>
+        </select>
+        <div class="sorting__view">
+          <p class="sorting__view-card">
+            <label class="visually-hidden" for="view-card"></label>
+            <input class="" type="radio" name="sorting-view" id="view-card" value="view-card" title="Вид карточками">
+          </p>
+          <p class="sorting__view-list">
+            <label class="visually-hidden" for="view-list"></label>
+            <input class="" type="radio" name="sorting-view" id="view-list" value="view-list" title="Вид списком">
+          </p>
         </div>
       </section>
     </main>
