@@ -28,14 +28,14 @@
         </button>
         <ul class="nav__list">
           <li class="nav__list-item theme">
-            <div class="theme-toggle__block">
-              <p class="theme-toggle__item">
+            <div class="theme__toggle-block">
+              <p class="theme__toggle-item">
                 <label class="visually-hidden" for="light">Светлая</label>
-                <input class="theme-toggle__radio" type="radio" name="theme-toggle" id="light" value="light" title="Светлая">
+                <input class="theme__toggle-radio" type="radio" name="theme-toggle" id="light" value="light" title="Светлая">
               </p>
-              <p class="theme-toggle__item">
+              <p class="theme__toggle-item">
                 <label class="visually-hidden" for="dark">Тёмная</label>
-                <input class="theme-toggle__radio" type="radio" name="theme-toggle" id="dark" value="dark" title="Тёмная">
+                <input class="theme__toggle-radio" type="radio" name="theme-toggle" id="dark" value="dark" title="Тёмная">
               </p>
             </div>
           </li>
@@ -145,56 +145,56 @@
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Гротески</h3>
-              <span class="promotions__swiper-number">280</span>
+              <span class="swiper__catalog-number">280</span>
               <span class="update-marker">45</span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Антиквы</h3>
-              <span class="promotions__swiper-number">89</span>
+              <span class="swiper__catalog-number">89</span>
               <span class="update-marker hidden"></span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Брусковые</h3>
-              <span class="promotions__swiper-number">129</span>
+              <span class="swiper__catalog-number">129</span>
               <span class="update-marker">2</span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Акцидентные</h3>
-              <span class="promotions__swiper-number">278</span>
+              <span class="swiper__catalog-number">278</span>
               <span class="update-marker hidden"></span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Рукописныее</h3>
-              <span class="promotions__swiper-number">23</span>
+              <span class="swiper__catalog-number">23</span>
               <span class="update-marker hidden"></span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Неалфавитные</h3>
-              <span class="promotions__swiper-number">8</span>
+              <span class="swiper__catalog-number">8</span>
               <span class="update-marker hidden"></span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Моноширинные</h3>
-              <span class="promotions__swiper-number">280</span>
+              <span class="swiper__catalog-number">280</span>
               <span class="update-marker hidden"></span>
             </a>
           </li>
           <li class="swiper__list-item">
             <a class="swiper__link" href="#">
               <h3>Исторические</h3>
-              <span class="promotions__swiper-number">58</span>
+              <span class="swiper__catalog-number">58</span>
               <span class="update-marker hidden"></span>
             </a>
           </li>
@@ -203,23 +203,211 @@
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
         <select class="sorting__select" aria-label="Сортировка" name="sorting">
-          <option value="" selected>все новинки</option>
-          <option value="">распродажа</option>
-          <option value="">рекомендуем</option>
-          <option value="">бестселлеры</option>
+          <option value="new" selected>все новинки</option>
+          <option value="sale">распродажа</option>
+          <option value="recommend">рекомендуем</option>
+          <option value="bestseller">бестселлеры</option>
         </select>
         <div class="sorting__view">
           <p class="sorting__view-card">
             <label class="visually-hidden" for="view-card"></label>
-            <input class="" type="radio" name="sorting-view" id="view-card" value="view-card" title="Вид карточками">
+            <input class="sorting__view-radio" type="radio" name="sorting-view" id="view-card" value="view-card" title="Вид карточками">
           </p>
           <p class="sorting__view-list">
             <label class="visually-hidden" for="view-list"></label>
-            <input class="" type="radio" name="sorting-view" id="view-list" value="view-list" title="Вид списком">
+            <input class="sorting__view-radio" type="radio" name="sorting-view" id="view-list" value="view-list" title="Вид списком">
           </p>
         </div>
       </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог шрифтов</h2>
+        <article class="catalog__item product">
+          <h3 class="product">PRAGMATICA Next VF</h3>
+          <span class="product__label label">распродажа</span>
+          <span class="product__sale sale-percent">30%</span>
+          <details class="product__content">
+            <summary>Кнопка</summary>
+            <div class="product__cotnainer">
+              <p class="product__format">opentype</p>
+              <dl class="product__list example">
+                <dt class="example__description">начертаний</dt>
+                <dd class="example__value">8</dd>
+                <dt class="example__description">языки</dt>
+                <dd class="example__value">92</dd>
+              </dl>
+              <p class="product__style">гротеск</p>
+              <p class="product__price"><span class="product__price-from">От</span>&nbsp;2&nbsp;250&nbsp;₽</p>
+            </div>
+            <div class="tags">
+              <span class="tags__element">десктоп</span>
+              <span class="tags__element">веб</span>
+            </div>
+          </details>
+          <div class="product__slider-container">
+            <picture>
+              <img class="product__slider-image" src="images/pragmatica-next-vf-mobile@1x.png" srcset="images/pragmatica-next-vf-mobile@1x.webp, images/pragmatica-next-vf-mobile@2x.webp 2x" width="370" height="30" alt="Два флага на флагштоках, на черном фоне: желтый с надписью 'VAST', белый с надписью 'ALEXANDER LUBOVENKO.">
+            </picture>
+            <ul class="product__slider-pagination pagination">
+              <li class="pagination__item"></li>
+              <li class="pagination__item"></li>
+              <li class="pagination__item"></li>
+            </ul>
+          </div>
+        </article>
+        <article class="catalog__item product">
+          <h3 class="product">Proxima nova</h3>
+          <span class="product__label label">распродажа</span>
+          <span class="product__sale sale-percent">30%</span>
+          <details class="product__content">
+            <summary>Кнопка</summary>
+            <div class="product__cotnainer">
+              <p class="product__format">opentype</p>
+              <dl class="product__list example">
+                <dt class="example__description">начертаний</dt>
+                <dd class="example__value">8</dd>
+                <dt class="example__description">языки</dt>
+                <dd class="example__value">92</dd>
+              </dl>
+              <p class="product__style">гротеск</p>
+              <p class="product__price"><span class="product__price-from">От</span>&nbsp;2&nbsp;250&nbsp;₽</p>
+            </div>
+            <div class="tags">
+              <span class="tags__element">десктоп</span>
+              <span class="tags__element">веб</span>
+            </div>
+          </details>
+          <div class="product__slider-container">
+            <picture>
+              <img class="product__slider-image" src="images/proxima-nova-mobile@1x.png" srcset="images/proxima-nova-mobile@1x.webp, images/proxima-nova-mobile@2x.webp 2x" width="370" height="30" alt="Синяя обложка книги с оранжевыми элементами дизайна, расположенные на фоне других книг с аналогичным оформлением.">
+            </picture>
+            <ul class="product__slider-pagination pagination">
+              <li class="pagination__item"></li>
+              <li class="pagination__item"></li>
+              <li class="pagination__item"></li>
+            </ul>
+          </div>
+        </article>
+        <article class="catalog__item product">
+          <h3 class="product">Proxima nova</h3>
+          <span class="product__label label">распродажа</span>
+          <span class="product__sale sale-percent hidden">30%</span>
+          <details class="product__content">
+            <summary>Кнопка</summary>
+            <div class="product__cotnainer">
+              <p class="product__format">opentype</p>
+              <dl class="product__list example">
+                <dt class="example__description">начертаний</dt>
+                <dd class="example__value">8</dd>
+                <dt class="example__description">языки</dt>
+                <dd class="example__value">92</dd>
+              </dl>
+              <p class="product__style">гротеск</p>
+              <p class="product__price"><span class="product__price-from">От</span>&nbsp;2&nbsp;250&nbsp;₽</p>
+            </div>
+            <div class="tags">
+              <span class="tags__element">десктоп</span>
+              <span class="tags__element">веб</span>
+            </div>
+          </details>
+          <div class="product__slider-container">
+            <picture>
+              <img class="product__slider-image" src="images/magistral-pt-mobile@1x.png" srcset="images/magistral-pt-mobile@1x.webp, images/magistral-pt-mobile@2x.webp 2x" width="370" height="30" alt="Стопка образцов типографики с красными элементами на белом фоне">
+            </picture>
+            <ul class="product__slider-pagination pagination">
+              <li class="pagination__item"></li>
+              <li class="pagination__item"></li>
+              <li class="pagination__item"></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="swiper">
+        <h2 class="swiper__title visually-hidden">Каталог шрифтов</h2>
+        <ul class="swiper__list">
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Гротески</h3>
+              <span class="swiper__catalog-number">280</span>
+              <span class="update-marker">45</span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Антиквы</h3>
+              <span class="swiper__catalog-number">89</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Брусковые</h3>
+              <span class="swiper__catalog-number">129</span>
+              <span class="update-marker">2</span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Акцидентные</h3>
+              <span class="swiper__catalog-number">278</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Рукописныее</h3>
+              <span class="swiper__catalog-number">23</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Неалфавитные</h3>
+              <span class="swiper__catalog-number">8</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Моноширинные</h3>
+              <span class="swiper__catalog-number">280</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+          <li class="swiper__list-item">
+            <a class="swiper__link" href="#">
+              <h3>Исторические</h3>
+              <span class="swiper__catalog-number">58</span>
+              <span class="update-marker hidden"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__links-wrapper">
+            <a class="footer__link" href="#">FAQ</a>
+            <a class="footer__link" href="#">Лицензии</a>
+            <a class="footer__link" href="#">Контакты</a>
+        </div>
+        <form class="footer__subscribe-form subscribe" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="subscribe-email">Введите ваш email</label>
+          <input class="subscribe-input" id="subscribe-email" name="subscribe-email" type="email" placeholder="Ваш e-mail" required="">
+          <button class="subscribe-button button" type="submit" value="Подписаться">Подписаться</button>
+        </form>
+        <div class="social-copyright">
+        <div class="social-copyright__icons">
+            <a class="social-copyright__icon" href="#">
+                <img src="#" alt="Telegram" width="40" height="40">
+            </a>
+            <a class="social-copyright__icon" href="#">
+                <img src="#" alt="VK" width="40" height="40">
+            </a>
+        </div>
+        <p class="social-copyright__text">&copy; 1998–2023. Паратайп. Все авторские права защищены.</p>
+        <p class="social-copyright__design">Дизайн Wemakefab</p>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
