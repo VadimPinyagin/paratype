@@ -231,7 +231,7 @@
             <span class="product__label label">распродажа</span>
             <span class="product__sale sale-percent">30%</span>
             <details class="product__content">
-              <summary>Кнопка</summary>
+              <summary>Должно быть скрыто</summary>
               <div class="product__cotnainer">
                 <p class="product__format">opentype</p>
                 <dl class="product__list example">
@@ -248,6 +248,7 @@
                 <span class="tags__element">веб</span>
               </div>
             </details>
+            <button>Кнопка</button>
             <div class="product__slider-container">
               <picture>
                 <img class="product__slider-image" src="images/pragmatica-next-vf-mobile@1x.png" srcset="images/pragmatica-next-vf-mobile@1x.webp, images/pragmatica-next-vf-mobile@2x.webp 2x" width="370" height="30" alt="Два флага на флагштоках, на черном фоне: желтый с надписью 'VAST', белый с надписью 'ALEXANDER LUBOVENKO.">
@@ -325,6 +326,49 @@
               </ul>
             </div>
           </article>
+          <article class="catalog__item product">
+    <h3 class="product">PRAGMATICA Next VF</h3>
+    <span class="product__label label">распродажа</span>
+    <span class="product__sale sale-percent">30%</span>
+    <details class="product__content" id="product-details">
+        <summary style="display: none;">Должно быть скрыто</summary>
+        <div class="product__cotnainer">
+            <p class="product__format">opentype</p>
+            <dl class="product__list example">
+                <dt class="example__description">начертаний</dt>
+                <dd class="example__value">8</dd>
+                <dt class="example__description">языки</dt>
+                <dd class="example__value">92</dd>
+            </dl>
+            <p class="product__style">гротеск</p>
+            <p class="product__price"><span class="product__price-from">От</span>&nbsp;2&nbsp;250&nbsp;₽</p>
+        </div>
+        <div class="tags">
+            <span class="tags__element">десктоп</span>
+            <span class="tags__element">веб</span>
+        </div>
+    </details>
+    <button id="toggle-button">Кнопка</button>
+    <div class="product__slider-container">
+        <picture>
+            <img class="product__slider-image" src="images/pragmatica-next-vf-mobile@1x.png" srcset="images/pragmatica-next-vf-mobile@1x.webp, images/pragmatica-next-vf-mobile@2x.webp 2x" width="370" height="30" alt="Два флага на флагштоках, на черном фоне: желтый с надписью 'VAST', белый с надписью 'ALEXANDER LUBOVENKO.'">
+        </picture>
+        <ul class="product__slider-pagination pagination">
+            <li class="pagination__item"></li>
+            <li class="pagination__item"></li>
+            <li class="pagination__item"></li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    const button = document.getElementById('toggle-button');
+    const details = document.getElementById('product-details');
+
+    button.addEventListener('click', () => {
+        details.open = !details.open;
+    });
+</script>
         </div>
       </section>
       <section class="swiper">
