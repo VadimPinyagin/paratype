@@ -4,7 +4,8 @@
   color: var(--black-and-brown);
   display: flex;
   column-gap: 12px;
-  padding-inline: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 90px;
   padding-block: 15px;
 
   .special__discount{
