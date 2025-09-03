@@ -1,0 +1,1 @@
+var t=()=>{document.querySelector(".header__nav").classList.remove("main-nav--nojs");let s=document.querySelector(".btn-burger"),e=document.querySelector(".nav");e.classList.add("nav__list--is-close"),s&&s.addEventListener("click",()=>{e.classList.toggle("nav__list--is-open"),e.classList.toggle("nav__list--is-close")})};export{t as toggleMenu};

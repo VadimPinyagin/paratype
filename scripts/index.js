@@ -1,0 +1,1 @@
+var s=()=>{document.querySelector(".header__nav").classList.remove("main-nav--nojs");let t=document.querySelector(".btn-burger"),e=document.querySelector(".nav");e.classList.add("nav__list--is-close"),t&&t.addEventListener("click",()=>{e.classList.toggle("nav__list--is-open"),e.classList.toggle("nav__list--is-close")})};s();
