@@ -1,6 +1,15 @@
 .search{
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../../icons/search-icon.svg");
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+
+  &::before{
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../icons/search-icon.svg");
+  }
 }
