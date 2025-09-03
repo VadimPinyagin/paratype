@@ -1,0 +1,31 @@
+.user-list{
+  display: flex;
+
+  .user-list__item{
+
+  }
+
+  .user-list__favorites{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/favorites-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  .user-list__cart{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/cart-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  .user-list__account{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/account-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
