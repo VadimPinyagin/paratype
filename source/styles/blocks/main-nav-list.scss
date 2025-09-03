@@ -1,0 +1,12 @@
+.main-nav-list{
+  @include list-reset;
+
+  .main-nav-list__link{
+    @include link-reset;
+    text-transform: uppercase;
+    color: var(--black-and-brown);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+  }
+}

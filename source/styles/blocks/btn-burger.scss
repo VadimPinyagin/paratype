@@ -1,12 +1,12 @@
 .btn-burger{
-  background-color: transparent;
-  border: none;
-  width: 60px;
-  height: 60px;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding: 0;
 
   @media (min-width: $desktop-width) {
     display: none;

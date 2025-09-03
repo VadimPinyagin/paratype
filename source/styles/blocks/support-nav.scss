@@ -1,0 +1,12 @@
+.support-nav{
+  @include list-reset;
+
+  .support-nav__link{
+    @include link-reset;
+    text-transform: uppercase;
+    color: var(--black-and-brown);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
