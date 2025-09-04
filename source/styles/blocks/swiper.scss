@@ -1,0 +1,28 @@
+.swiper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.swiper__list{
+  @include list-reset;
+  display: flex;
+  column-gap: 7px;
+
+  .swiper__link{
+    @include link-reset;
+  }
+}
+
+.swiper__list-item{
+  background-color: var(--gray-light);
+  width: 105px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.swiper__list-item:nth-child(1){
+  background-image: url("../../icons/grotesques-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 61px 35px;
+  background-color: var(--gray-light);
+}
