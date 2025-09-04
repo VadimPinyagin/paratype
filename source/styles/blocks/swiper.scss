@@ -7,6 +7,9 @@
   @include list-reset;
   display: flex;
   column-gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 
   .swiper__link{
     @include link-reset;
@@ -15,7 +18,7 @@
 
 .swiper__list-item{
   background-color: var(--gray-light);
-  width: 105px;
+  min-width: 105px;
   height: 120px;
   border-radius: 10px;
 }
