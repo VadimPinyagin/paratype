@@ -1,31 +1,48 @@
-.swiper {
-  position: relative;
-  margin: 0 auto;
+
+.swiper__container {
+  width: 390px;
+  padding: 0 10px;
 }
 
-.swiper__list{
+.swiper__list {
   @include list-reset;
   display: flex;
-  column-gap: 7px;
+  gap: 7px;
+  margin: 0;
   overflow-x: auto;
-  scrollbar-width: none;
-  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
-  .swiper__link{
-    @include link-reset;
+    &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 
-.swiper__list-item{
+.swiper__list-item {
+  flex: 0 0 auto;
+  width: 105px;
   background-color: var(--gray-light);
+  background-repeat: no-repeat;
+  background-size: 61px 35px;
   min-width: 105px;
   height: 120px;
   border-radius: 10px;
 }
 
-.swiper__list-item:nth-child(1){
-  background-image: url("../../icons/grotesques-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 61px 35px;
-  background-color: var(--gray-light);
+.swiper__link {
+  @include link-reset;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--black-and-brown);
+
+}
+
+.swiper__element-title{
+  font-weight: 500;
+  margin: 0;
+}
+.swiper__catalog-number{
+  display: none;
+  font-weight: 500;
 }
