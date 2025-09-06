@@ -147,7 +147,7 @@
       <section class="swiper">
         <div class="container swiper__container">
           <h2 class="swiper__title visually-hidden">Каталог шрифтов</h2>
-                    <ul class="swiper__list">
+          <ul class="swiper__list">
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">280</span>
@@ -161,6 +161,9 @@
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">89</span>
+                 <picture>
+                  <img class="swiper__image" src="./images/antiques.svg" width="57" height="34">
+                </picture>
                 <p class="swiper__element-title">Антиквы</p>
               </a>
             </li>
@@ -168,36 +171,56 @@
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">129</span>
                 <span class="update-marker update-marker--swiper">2</span>
+                 <picture>
+                  <img class="swiper__image" src="./images/blocks.svg" width="56" height="33">
+                </picture>
                 <p class="swiper__element-title">Брусковые</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">278</span>
+                 <picture>
+                  <img class="swiper__image" src="./images/accidental.svg" width="39" height="45">
+                </picture>
                 <p class="swiper__element-title">Акцидентные</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">23</span>
+                <div class="swiper__images--wrapper">
+                  <picture>
+                    <img class="swiper__image" src="./images/handwritten.svg" width="54" height="57">
+                  </picture>
+                </div>
                 <p class="swiper__element-title">Рукописныее</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">8</span>
+                 <picture>
+                  <img class="swiper__image" src="./images/non-alphabetic.svg" width="81" height="35">
+                </picture>
                 <p class="swiper__element-title">Неалфавитные</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">280</span>
+                <picture>
+                  <img class="swiper__image" src="./images/monospace.svg" width="45" height="40">
+                </picture>
                 <p class="swiper__element-title">Моноширинные</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">58</span>
+                <picture>
+                  <img class="swiper__image" src="./images/historical.svg" width="56" height="31">
+                </picture>
                 <p class="swiper__element-title">Исторические</p>
               </a>
             </li>
@@ -329,65 +352,69 @@
             </div>
           </article>
           <article class="catalog__item product">
-    <h3 class="product">PRAGMATICA Next VF</h3>
-    <span class="product__label label">распродажа</span>
-    <span class="product__sale sale-percent">30%</span>
-    <details class="product__content" id="product-details">
-        <summary style="display: none;">Должно быть скрыто</summary>
-        <div class="product__cotnainer">
-            <p class="product__format">opentype</p>
-            <dl class="product__list example">
-                <dt class="example__description">начертаний</dt>
-                <dd class="example__value">8</dd>
-                <dt class="example__description">языки</dt>
-                <dd class="example__value">92</dd>
-            </dl>
-            <p class="product__style">гротеск</p>
-            <p class="product__price"><span class="product__price-from">От</span>&nbsp;2&nbsp;250&nbsp;₽</p>
-        </div>
-        <div class="tags">
-            <span class="tags__element">десктоп</span>
-            <span class="tags__element">веб</span>
-        </div>
-    </details>
-    <button id="toggle-button">Кнопка</button>
-    <div class="product__slider-container">
-        <picture>
-            <img class="product__slider-image" src="images/pragmatica-next-vf-mobile@1x.png" srcset="images/pragmatica-next-vf-mobile@1x.webp, images/pragmatica-next-vf-mobile@2x.webp 2x" width="370" height="30" alt="Два флага на флагштоках, на черном фоне: желтый с надписью 'VAST', белый с надписью 'ALEXANDER LUBOVENKO.'">
-        </picture>
-        <ul class="product__slider-pagination pagination">
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-        </ul>
-    </div>
-</article>
+            <h3 class="product">PRAGMATICA Next VF</h3>
+            <span class="product__label label">распродажа</span>
+            <span class="product__sale sale-percent">30%</span>
+            <details class="product__content" id="product-details">
+              <summary style="display: none;">Должно быть скрыто</summary>
+              <div class="product__cotnainer">
+                  <p class="product__format">opentype</p>
+                  <dl class="product__list example">
+                      <dt class="example__description">начертаний</dt>
+                      <dd class="example__value">8</dd>
+                      <dt class="example__description">языки</dt>
+                      <dd class="example__value">92</dd>
+                  </dl>
+                  <p class="product__style">гротеск</p>
+                  <p class="product__price"><span class="product__price-from">От</span>&nbsp;2&nbsp;250&nbsp;₽</p>
+              </div>
+              <div class="tags">
+                  <span class="tags__element">десктоп</span>
+                  <span class="tags__element">веб</span>
+              </div>
+            </details>
+            <button id="toggle-button">Кнопка</button>
+            <div class="product__slider-container">
+                <picture>
+                    <img class="product__slider-image" src="images/pragmatica-next-vf-mobile@1x.png" srcset="images/pragmatica-next-vf-mobile@1x.webp, images/pragmatica-next-vf-mobile@2x.webp 2x" width="370" height="30" alt="Два флага на флагштоках, на черном фоне: желтый с надписью 'VAST', белый с надписью 'ALEXANDER LUBOVENKO.'">
+                </picture>
+                <ul class="product__slider-pagination pagination">
+                    <li class="pagination__item"></li>
+                    <li class="pagination__item"></li>
+                    <li class="pagination__item"></li>
+                </ul>
+            </div>
+            <script>
+              const button = document.getElementById('toggle-button');
+              const details = document.getElementById('product-details');
 
-<script>
-    const button = document.getElementById('toggle-button');
-    const details = document.getElementById('product-details');
-
-    button.addEventListener('click', () => {
-        details.open = !details.open;
-    });
-</script>
+              button.addEventListener('click', () => {
+                  details.open = !details.open;
+              });
+            </script>
+          </article>
         </div>
       </section>
       <section class="swiper">
-        <h2 class="swiper__title visually-hidden">Каталог шрифтов</h2>
         <div class="container swiper__container">
+          <h2 class="swiper__title visually-hidden">Каталог шрифтов</h2>
           <ul class="swiper__list">
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">280</span>
                 <span class="update-marker update-marker--swiper">45</span>
+                <picture>
+                  <img class="swiper__image" src="./images/grotesques.svg" width="61" height="35">
+                </picture>
                 <p class="swiper__element-title">Гротески</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">89</span>
-                <span class="update-marker update-marker--swiper hidden"></span>
+                 <picture>
+                  <img class="swiper__image" src="./images/antiques.svg" width="57" height="34">
+                </picture>
                 <p class="swiper__element-title">Антиквы</p>
               </a>
             </li>
@@ -395,41 +422,56 @@
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">129</span>
                 <span class="update-marker update-marker--swiper">2</span>
+                 <picture>
+                  <img class="swiper__image" src="./images/blocks.svg" width="56" height="33">
+                </picture>
                 <p class="swiper__element-title">Брусковые</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">278</span>
-                <span class="update-marker update-marker--swiper hidden"></span>
+                 <picture>
+                  <img class="swiper__image" src="./images/accidental.svg" width="39" height="45">
+                </picture>
                 <p class="swiper__element-title">Акцидентные</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">23</span>
-                <span class="update-marker update-marker--swiper hidden"></span>
+                <div class="swiper__images--wrapper">
+                  <picture>
+                    <img class="swiper__image" src="./images/handwritten.svg" width="54" height="57">
+                  </picture>
+                </div>
                 <p class="swiper__element-title">Рукописныее</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">8</span>
-                <span class="update-marker update-marker--swiper hidden"></span>
+                 <picture>
+                  <img class="swiper__image" src="./images/non-alphabetic.svg" width="81" height="35">
+                </picture>
                 <p class="swiper__element-title">Неалфавитные</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">280</span>
-                <span class="update-marker update-marker--swiper hidden"></span>
+                <picture>
+                  <img class="swiper__image" src="./images/monospace.svg" width="45" height="40">
+                </picture>
                 <p class="swiper__element-title">Моноширинные</p>
               </a>
             </li>
             <li class="swiper__list-item">
               <a class="swiper__link" href="#">
                 <span class="swiper__catalog-number">58</span>
-                <span class="update-marker update-marker--swiper hidden"></span>
+                <picture>
+                  <img class="swiper__image" src="./images/historical.svg" width="56" height="31">
+                </picture>
                 <p class="swiper__element-title">Исторические</p>
               </a>
             </li>

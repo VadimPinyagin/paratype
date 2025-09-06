@@ -1,7 +1,5 @@
 
 .swiper__container {
-  width: 390px;
-  padding: 0 10px;
 }
 
 .swiper__list {
@@ -11,6 +9,7 @@
   margin: 0;
   overflow-x: auto;
   scroll-behavior: smooth;
+  padding-inline: 10px;
 
     &::-webkit-scrollbar {
     width: 0;
@@ -33,16 +32,28 @@
   @include link-reset;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 10px;
   height: 100%;
   color: var(--black-and-brown);
+  position: relative;
+}
 
+.swiper__images--wrapper{
+  position: absolute;
+  bottom: 43px;
 }
 
 .swiper__element-title{
   font-weight: 500;
   margin: 0;
+  padding-block-start: 23px;
+  padding-block-end:20px;
+  overflow-wrap: break-word;
 }
 .swiper__catalog-number{
   display: none;
   font-weight: 500;
 }
+

@@ -4,7 +4,6 @@
   font-size: 12px;
   line-height: 100%;
   font-weight: 600;
-  min-width: fit-content;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -17,4 +16,5 @@
   position: relative;
   color: var(--basic-white);
   overflow-x: hidden;
+  min-width: max-content;
 }
