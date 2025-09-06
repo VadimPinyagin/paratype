@@ -1,3 +1,12 @@
 .theme{
   @include list-reset;
+  display: flex;
+  width: 330px;
+  height: 40px;
+  border-radius: var(--smoky-white);
+
+  .theme__toggle-radio{
+    width: 165px;
+    height: 40px;
+  }
 }
